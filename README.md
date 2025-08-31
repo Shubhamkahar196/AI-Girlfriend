@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+AI Girlfriend Companion
+This project is a web-based chat application that allows users to have a personalized conversation with an AI model. It features an interactive user interface where you can select an AI girlfriend avatar and engage in a text-based conversation. The application is built with Next.js and utilizes the Gemini API for natural language generation.
 
-## Getting Started
+Features
+AI Girlfriend Selection: Choose from a gallery of AI girlfriend avatars to personalize your chat experience.
 
-First, run the development server:
+Interactive Chat Interface: Send messages and receive real-time replies from the AI model.
 
-```bash
+Responsive Design: The app is fully responsive and provides a seamless user experience on both desktop and mobile devices.
+
+API Integration: The backend is powered by a Next.js API route that communicates with the Gemini API to generate responses.
+
+Secure: Environment variables are used to securely manage API keys and endpoints.
+
+Live Demo
+You can view a live demo of this project here:
+
+live link : https://ai-girlfriend-kohl.vercel.app/
+
+Note: Please replace the placeholder link with your actual Vercel or other live deployment URL.
+
+Technologies Used
+Framework: Next.js (App Router)
+
+Language: TypeScript
+
+Styling: Tailwind CSS
+
+HTTP Client: Axios
+
+AI Model: Gemini API
+
+Getting Started
+Follow these steps to set up and run the project locally.
+
+1. Prerequisites
+Make sure you have Node.js and npm installed on your machine.
+
+2. Installation
+Clone the repository and install the dependencies:
+
+git clone https://github.com/Shubhamkahar196/AI-Girlfriend
+cd ai-girlfriend-companion
+npm install
+
+3. Environment Variables
+Create a .env file in the root of your project and add your Gemini API key and API URL.
+
+GEMINI_API_TOKEN=YOUR_GEMINI_API_KEY
+GEMINI_API_URL=your_gemini_api
+
+
+4. Run the Development Server
+Start the application with the following command:
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The application will be accessible at http://localhost:3000.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Usage
+Choose an Avatar: On the main page, click on one of the AI girlfriend images to select it.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Start Chatting: The chat interface will appear. Type your message in the input field and press "Send" or Enter to get a reply.
