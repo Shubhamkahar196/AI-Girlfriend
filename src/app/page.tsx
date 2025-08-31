@@ -80,6 +80,7 @@ export default function Home() {
               onClick={() => setSelectedImage(null)}
               className="absolute top-2 right-2 bg-white text-gray-800 p-2 rounded-full shadow-lg hover:bg-gray-200 transition-colors"
             >
+              
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M16.023 9.348h4.992v-.001m-4.992 0h-4.992m4.992 0L19.231 2.484M16.023 9.348L12.42 12.95m4.992 0l4.992 0m-4.992 0L19.231 2.484M16.023 9.348h-4.992m4.992 0h4.992" />
               </svg>
@@ -87,6 +88,7 @@ export default function Home() {
           </div>
           <div className="w-full md:w-1/2 flex flex-col">
             <div className="chat-container bg-white rounded-lg shadow-lg p-4 w-full flex-grow overflow-y-auto mb-4" style={{ height: '500px' }}>
+              <h1 className="flex items-center justify-center font-bold text-3xl ">Chat with me</h1>
               {chatHistory.map((message, index) => (
                 <div
                   key={index}
